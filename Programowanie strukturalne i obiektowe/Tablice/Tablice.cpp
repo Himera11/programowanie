@@ -55,7 +55,7 @@ void Zadanie3()
 	std::cout << "Podaj 1 liczbe:\n";
 	std::cin >> liczby[1];
 	std::cout << "Podaj 2 liczbe:\n";
-	std::cin >> liczby[2];6ryruyryyr
+	std::cin >> liczby[2];
 	std::cout << "Podaj 3 liczbe:\n";
 	std::cin >> liczby[3];
 	std::cout << "Podaj 4 liczbe:\n";
