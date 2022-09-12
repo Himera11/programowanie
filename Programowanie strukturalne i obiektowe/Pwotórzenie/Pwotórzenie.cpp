@@ -7,6 +7,7 @@ void menu()
 	cout << "Menu\n";
 	cout << "1. pole kwadratu\n";
 	cout << "2. pole trojkata\n";
+	cout << "3. Historia bezdomnego\n";
 } 
 
 int option()
@@ -34,16 +35,51 @@ void Poletrojkata()
 	cin >> b;
 	cout << "dzieki ci panie niech bogowie beda ci przychylni " << 0.5 * a * b;
 }
+void Historia()
+{
+	system("cls");
+	cout << "no mialem se dom i juz nie mam co ja mam powiedziec z domu mnie wykopali bo za duzo kasy na lola wydalem to wiecie, okolo 40 kola wyszlo na lola a no i bronza mialem oczywiscie";
+}
+void koniecHistori()
+{
+	system("cls");
+
+	cout << "smieciem jestes ja smutny teraz.";
+}
+void Historiabezdomnego()
+{
+	system("cls");
+
+	cout << "Chcesz us³yszec moja historie:   wybierz liczbe   1_tak/2_nie";
+	int wybor;
+	cin >> wybor;
+	
+	if (wybor == 1)
+	{
+		Historia();
+	}
+	if (wybor == 2)
+	{
+		koniecHistori();
+	}
+}
+
 
 void end(int selectedOption)
 {
-	if (selectedOption == 1)
+	switch (selectedOption)
 	{
+	case 1:
 		Polekwadratu();
-	}
-	if (selectedOption == 2)
-	{
+		break;
+	case 2:
 		Poletrojkata();
+		break;
+	case 3:
+		Historiabezdomnego();
+		break;
+	default:
+		cout << "JOE BIDEN";
 	}
 }
 
