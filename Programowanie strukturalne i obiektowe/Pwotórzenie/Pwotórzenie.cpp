@@ -8,7 +8,10 @@ void menu()
 	cout << "1. pole kwadratu\n";
 	cout << "2. pole trojkata\n";
 	cout << "3. Historia bezdomnego\n";
-
+	cout << "4. nieparzyste\n";
+	cout << "5. ci¹g fibano\n";
+	cout << "6. dzielniki\n";
+	cout << "7. liczby slownie\n";
 	cout << "0. zamknij program\n";
 } 
 
@@ -65,12 +68,67 @@ void Historiabezdomnego()
 		koniecHistori();
 	}
 }
+void liczbynieparzyste()
+{
+	int num;
+	cout << "ile liczb ";
+	cin >> num;
+	for (int i = num; i >= 0 ; i--)
+	{
+		if (i % 2 != 0)
+			cout << i << endl;
+	}
+}
 
+void fibonachi()
+{
+	int ile;
+	cout << "ile";
+	cin >> ile;
+	long long num1 = 0;
+	long long num2 = 1;
+	for (int i = 0; i < ile; i++)
+	{
+		cout << num1 << endl;
+		num1 += num2;
+		num2 = num1 - num2;
+		if (num1 < 0)
+		{
+			cout << "nope";
+		}
+	}
+}
+
+void dzielniki()
+{
+	cout << "podaj liczbe ";
+	int num;
+	cin >> num;
+	for (int i = 1; i <= num / 2; i++)
+	{
+		if (num % i == 0)
+			cout << i << endl;
+	}
+	cout << num;
+	cout << endl;
+}
+
+void slownie()
+{
+	string words[10] = { "zero" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" };
+	int num;
+	cout << "podaj liczbe do zapisania slownie";
+	cin >> num;
+	
+
+}
 
 void end(int selectedOption)
 {
 	switch (selectedOption)
 	{
+	case 0:
+		return;
 	case 1:
 		Polekwadratu();
 		break;
@@ -80,15 +138,22 @@ void end(int selectedOption)
 	case 3:
 		Historiabezdomnego();
 		break;
-	case 0:
-		return;
+	case 4:
+		liczbynieparzyste();
+		break;
+	case 5:
+		fibonachi();
+		break;
+	case 6:
+		dzielniki();
+		break;
+	case 7:
+		slownie();
+		break;
 	default:
 		cout << "JOE BIDEN";
 	}
-	if (selectedOption != 0 )
-	{
-		system("pause");
-	}
+	system("pause");
 }
 
 void mainprogram()
