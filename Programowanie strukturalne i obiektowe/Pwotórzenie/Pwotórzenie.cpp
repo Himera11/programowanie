@@ -113,14 +113,39 @@ void dzielniki()
 	cout << endl;
 }
 
-void slownie()
+void numerynaslowa()
 {
-	string words[10] = { "zero" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" };
-	int num;
-	cout << "podaj liczbe do zapisania slownie";
-	cin >> num;
-	
+	system("cls");
+	cout << "Podaj liczbe\n";
+	int numberfromuser;
+	cin >> numberfromuser;
 
+	string arrrayofword[10] = { "zero", "jeden", "dwa", "trzy", "cztery", "piec", "szesc", "siedem", "osiem", "diewiec", };
+	int number = numberfromuser;
+
+	do
+	{
+		int digit = number % 10;
+		number = number / 10;
+	
+		cout << arrrayofword[digit];
+		cout << ", ";
+
+	} while (number != 0);
+
+	number = numberfromuser;
+	string stringnumber = "";
+	do
+	{
+		int digit = number % 10;
+		number = number / 10;
+
+		stringnumber = arrrayofword[digit] + " " + stringnumber;
+
+	} while (number != 0);
+
+	cout << stringnumber;
+	cout << ", ";
 }
 
 void end(int selectedOption)
@@ -148,7 +173,7 @@ void end(int selectedOption)
 		dzielniki();
 		break;
 	case 7:
-		slownie();
+		numerynaslowa();
 		break;
 	default:
 		cout << "JOE BIDEN";
