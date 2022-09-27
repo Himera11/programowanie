@@ -12,6 +12,8 @@ void menu()
 	cout << "5. ci¹g fibano\n";
 	cout << "6. dzielniki\n";
 	cout << "7. liczby slownie\n";
+	cout << "8. decnabinar\n";
+	cout << "9. nomina³y\n";
 	cout << "0. zamknij program\n";
 } 
 
@@ -148,6 +150,36 @@ void numerynaslowa()
 	cout << ", ";
 }
 
+void liczbanabinar()
+{
+	system("cls");
+	int tablica[10];
+	int number;
+	int i;
+	cout << "podaj liczbe do zmiany: ";
+	cin >> number;
+	for (i = 0; number > 0; i++)
+	{
+		tablica[i] = number % 2;
+		number = number / 2;
+	}
+	cout << "liczba = ";
+	for (i = i - 1; i >= 0; i--)
+	{
+		cout << tablica[i];
+	}
+}
+
+void reszta()
+{
+	int reszta;
+	cout << "podaj reszte  ";
+	cin >> reszta;
+	tablica[7];
+
+}
+
+
 void end(int selectedOption)
 {
 	switch (selectedOption)
@@ -174,6 +206,9 @@ void end(int selectedOption)
 		break;
 	case 7:
 		numerynaslowa();
+		break;
+	case 8:
+		liczbanabinar();
 		break;
 	default:
 		cout << "JOE BIDEN";
