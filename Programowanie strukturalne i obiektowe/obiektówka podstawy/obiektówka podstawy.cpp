@@ -5,6 +5,17 @@ class Point
 {
 public:
 
+	//metoda konstruktora obiektu
+	Point()
+	{
+		x = 0;
+		y = 0;
+	}
+	Point(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
 	double calculatedDistance()
 	{
 		double distance = sqrt(x * x + y * y);
@@ -34,9 +45,9 @@ private:
 
 int main()
 {
-	Point point;
-	point.Setx(3);
-	point.Sety(4);
+	Point point(3, 4);
+	//point.Setx(3);
+	//point.Sety(4);
 	cout << "Dystans od punktu (0,0) wynosi: " << point.calculatedDistance() << endl;
 
 }
