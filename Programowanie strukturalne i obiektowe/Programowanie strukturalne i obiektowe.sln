@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Treść zadań", "Treść zadań\Treść zadań.vcxproj", "{0B07B802-470B-4138-B230-2B10985A7182}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Treści zadań", "0. Treści zadań", "{1D9152DC-3916-4267-8618-BDBB776AF330}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Treści zadań", "00. Treści zadań", "{1D9152DC-3916-4267-8618-BDBB776AF330}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Podstawy programowania", "1. Podstawy programowania", "{5219D71D-C2E7-4327-8887-395646D84B2A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Podstawy programowania", "01. Podstawy programowania", "{5219D71D-C2E7-4327-8887-395646D84B2A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Podstawy programowania", "Podstawy programowania\Podstawy programowania.vcxproj", "{574655A8-6396-42CF-A03E-50A28749F221}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Instrukcja warunkowe", "2. Instrukcja warunkowe", "{D06B56EF-0F91-4942-9BBA-0E943D9DC996}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Instrukcja warunkowe", "02. Instrukcja warunkowe", "{D06B56EF-0F91-4942-9BBA-0E943D9DC996}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Instrukcja IF", "Instrukcja IF\Instrukcja IF.vcxproj", "{EB4BDB4C-9727-4498-99C9-F9865D3EA9A5}"
 EndProject
@@ -23,31 +23,39 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Instrukcja FOR", "Instrukcj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Instrukcja SWITCH", "Instrukcja SWITCH\Instrukcja SWITCH.vcxproj", "{245A9F3B-AAF1-4014-A632-0222B74012AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Łańcuchy znaków", "3. Łańcuchy znaków", "{9FC189B0-BE2F-4E7D-84C8-849BA3F300E6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Łańcuchy znaków", "03. Łańcuchy znaków", "{9FC189B0-BE2F-4E7D-84C8-849BA3F300E6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Typ Char", "Typ Char\Typ Char.vcxproj", "{31AA7405-1731-48A8-AFDE-EE16E347B03A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Funkcje", "4. Funkcje", "{6CAA5402-20B2-4AC5-9EB0-FA0116FDE3C8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Funkcje", "04. Funkcje", "{6CAA5402-20B2-4AC5-9EB0-FA0116FDE3C8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Funkcje", "Funkcje\Funkcje.vcxproj", "{2E98D979-5954-433F-B0B5-09938A548CC6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Typ string", "Typ string\Typ string.vcxproj", "{623DEB57-3BD3-4299-8599-F9AE83480BFF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Algorytmy wyszukiwania", "5. Algorytmy wyszukiwania", "{87FC65B3-E5CA-45A8-B5B9-5544965123DB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Algorytmy wyszukiwania", "05. Algorytmy wyszukiwania", "{87FC65B3-E5CA-45A8-B5B9-5544965123DB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorytmy wyszukiwania", "Algorytmy wyszukiwania\Algorytmy wyszukiwania.vcxproj", "{373539EF-8E53-46F0-82DD-044487242382}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Kolekcje", "6. Kolekcje", "{60F98016-89CB-417F-9BBA-4F868AE7A447}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Kolekcje", "06. Kolekcje", "{60F98016-89CB-417F-9BBA-4F868AE7A447}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tablice", "Tablice\Tablice.vcxproj", "{0B5109FD-6DDF-4A44-9C88-13D58D4DB800}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Powtórzenie", "7. Powtórzenie", "{B9CE34EF-2A04-4254-B787-AA55A44C01F4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Powtórzenie", "07. Powtórzenie", "{B9CE34EF-2A04-4254-B787-AA55A44C01F4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pwotórzenie", "Pwotórzenie\Pwotórzenie.vcxproj", "{EC7ED392-3CB3-4C37-A07E-2A783B354D2F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. sruktury", "8. sruktury", "{D55F42BA-2A34-4CA7-9D14-FADDE720A03B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. sruktury", "08. sruktury", "{D55F42BA-2A34-4CA7-9D14-FADDE720A03B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "struktury", "struktury\struktury.vcxproj", "{886A1B9A-EF6C-4596-AFB9-7EF6904C6150}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Wskaźniki", "09. Wskaźniki", "{F0344659-7650-43FD-9808-2A45CA8CF20A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wskaźniki", "wskaźniki\wskaźniki.vcxproj", "{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. podstawy obiektów", "10. podstawy obiektów", "{D2F0FBD4-B704-4C76-A72F-1C659AB4B474}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obiektówka podstawy", "obiektówka podstawy\obiektówka podstawy.vcxproj", "{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -168,6 +176,22 @@ Global
 		{886A1B9A-EF6C-4596-AFB9-7EF6904C6150}.Release|x64.Build.0 = Release|x64
 		{886A1B9A-EF6C-4596-AFB9-7EF6904C6150}.Release|x86.ActiveCfg = Release|Win32
 		{886A1B9A-EF6C-4596-AFB9-7EF6904C6150}.Release|x86.Build.0 = Release|Win32
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Debug|x64.ActiveCfg = Debug|x64
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Debug|x64.Build.0 = Debug|x64
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Debug|x86.Build.0 = Debug|Win32
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Release|x64.ActiveCfg = Release|x64
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Release|x64.Build.0 = Release|x64
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Release|x86.ActiveCfg = Release|Win32
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3}.Release|x86.Build.0 = Release|Win32
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Debug|x64.ActiveCfg = Debug|x64
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Debug|x64.Build.0 = Debug|x64
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Debug|x86.Build.0 = Debug|Win32
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Release|x64.ActiveCfg = Release|x64
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Release|x64.Build.0 = Release|x64
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Release|x86.ActiveCfg = Release|Win32
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,6 +211,8 @@ Global
 		{0B5109FD-6DDF-4A44-9C88-13D58D4DB800} = {60F98016-89CB-417F-9BBA-4F868AE7A447}
 		{EC7ED392-3CB3-4C37-A07E-2A783B354D2F} = {B9CE34EF-2A04-4254-B787-AA55A44C01F4}
 		{886A1B9A-EF6C-4596-AFB9-7EF6904C6150} = {D55F42BA-2A34-4CA7-9D14-FADDE720A03B}
+		{CD04C8E5-3B50-4C77-A6A4-71077F582DC3} = {F0344659-7650-43FD-9808-2A45CA8CF20A}
+		{BD7F4499-CDC5-49F9-9FFF-8C689FF002C5} = {D2F0FBD4-B704-4C76-A72F-1C659AB4B474}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76EC34DF-6BC3-4283-8128-050FEAB28534}
