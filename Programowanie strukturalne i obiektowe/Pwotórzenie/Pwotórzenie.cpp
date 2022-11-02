@@ -16,7 +16,7 @@ void menu()
 	cout << "9. nomina³y\n";
 	cout << "0. zamknij program\n";
 } 
-
+//lol
 int option()
 {
 	cout << "wyierz opcje" << endl;
