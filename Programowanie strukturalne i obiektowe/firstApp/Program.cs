@@ -93,7 +93,7 @@ namespace firstApp
             else
             {
                 Console.WriteLine("wynik jest nieparzysty");
-            }
+            }    
 
             Console.ReadLine();
         }   
