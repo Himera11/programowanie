@@ -1,0 +1,16 @@
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\bin\Debug\net6.0-windows\arksuz inf 04.exe
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\bin\Debug\net6.0-windows\arksuz inf 04.deps.json
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\bin\Debug\net6.0-windows\arksuz inf 04.runtimeconfig.json
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\bin\Debug\net6.0-windows\arksuz inf 04.dll
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\bin\Debug\net6.0-windows\arksuz inf 04.pdb
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz_inf_04.Form1.resources
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.csproj.GenerateResource.cache
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.AssemblyInfoInputs.cache
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.AssemblyInfo.cs
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.csproj.CoreCompileInputs.cache
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.dll
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\refint\arksuz inf 04.dll
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.pdb
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\arksuz inf 04.genruntimeconfig.cache
+C:\Jan Zaborowicz\arksuz inf 04\arksuz inf 04\obj\Debug\net6.0-windows\ref\arksuz inf 04.dll
