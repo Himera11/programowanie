@@ -81,7 +81,7 @@ namespace MauiApp1
                 set { questionText = value; OnPropertyChanged(); }
             }
 
-            private List<Question> questions = new List<Question>(); // Lista pytań z bazy danych
+            private List<Question> questions = new List<Question>(); 
             private int currentQuestionId;
             public int CurrentQuestionID
             {
