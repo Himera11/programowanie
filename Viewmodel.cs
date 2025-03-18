@@ -121,6 +121,8 @@ namespace MauiApp1
 
             public ViewModel()
             {
+                dbContext = new PeopleDBContext();
+                
                 SubmitCommand = new Command(Submit);
                 NextQuestionCommand = new Command(NextQuestion);
                 PrevQuestionCommand = new Command(PrevQuestion);
@@ -131,10 +133,7 @@ namespace MauiApp1
 
             public void LoadQuestionsFromDatabase()
             {
-                using (var dbContext = new QuizDbContext())
-                {
                     questions = dbContext.Questions.ToList();
-                }
                 LoadQuestion();
             }
 
