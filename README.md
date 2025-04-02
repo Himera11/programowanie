@@ -1,14 +1,14 @@
-using System; using System.Globalization;
+using System;
 
 class Program { static void Main() { Console.Write("Podaj numer PESEL: "); string pesel = Console.ReadLine();
 
 if (IsValidPesel(pesel))
     {
-        DateTime birthDate = GetBirthDateFromPesel(pesel);
-        int age = CalculateAge(birthDate);
+        (int day, int month, int year) = GetBirthDateFromPesel(pesel);
+        int age = CalculateAge(year);
         string gender = GetGenderFromPesel(pesel);
         
-        Console.WriteLine($"Data urodzenia: {birthDate:dd-MM-yyyy}");
+        Console.WriteLine($"Data urodzenia: {day:D2}-{month:D2}-{year}");
         Console.WriteLine($"Wiek: {age}");
         Console.WriteLine($"Płeć: {gender}");
     }
@@ -41,34 +41,26 @@ static bool ValidateControlNumber(string pesel)
     return controlDigit == (pesel[10] - '0');
 }
 
-static DateTime GetBirthDateFromPesel(string pesel)
+static (int day, int month, int year) GetBirthDateFromPesel(string pesel)
 {
-    string yearPart = pesel.Substring(0, 2);
-    string monthPart = pesel.Substring(2, 2);
-    string dayPart = pesel.Substring(4, 2);
+    int year = int.Parse(pesel.Substring(0, 2));
+    int month = int.Parse(pesel.Substring(2, 2));
+    int day = int.Parse(pesel.Substring(4, 2));
     
-    int year = int.Parse(yearPart);
-    int month = int.Parse(monthPart);
-    int day = int.Parse(dayPart);
-    
-    if (month > 80 && month < 93) { month -= 80; }
-    else if (month > 0 && month < 13) { month = month; }
-    else if (month > 20 && month < 33) { month += 20; }
-    else if (month > 40 && month < 53) { month += 40; }
-    else if (month > 60 && month < 73) { month += 60; }
+    if (month > 80 && month < 93) { year += 1800; month -= 80; }
+    else if (month > 0 && month < 13) { year += 1900; }
+    else if (month > 20 && month < 33) { year += 2000; month -= 20; }
+    else if (month > 40 && month < 53) { year += 2100; month -= 40; }
+    else if (month > 60 && month < 73) { year += 2200; month -= 60; }
     else { throw new ArgumentException("Niepoprawny miesiąc w PESEL"); }
     
-    return new DateTime(year, month, day);
+    return (day, month, year);
 }
 
-static int CalculateAge(DateTime birthDate)
+static int CalculateAge(int birthYear)
 {
-    int age = DateTime.Now.Year - birthDate.Year;
-    if (DateTime.Now < birthDate.AddYears(age))
-    {
-        age--;
-    }
-    return age;
+    int currentYear = DateTime.Now.Year;
+    return currentYear - birthYear;
 }
 
 static string GetGenderFromPesel(string pesel)
