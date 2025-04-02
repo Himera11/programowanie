@@ -20,27 +20,43 @@ if (IsValidPesel(pesel))
 
 static bool IsValidPesel(string pesel)
 {
-    return pesel.Length == 11 && long.TryParse(pesel, out _);
+    if (pesel.Length != 11 || !long.TryParse(pesel, out _))
+        return false;
+    
+    return ValidateControlNumber(pesel);
+}
+
+static bool ValidateControlNumber(string pesel)
+{
+    int[] weights = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
+    int sum = 0;
+    
+    for (int i = 0; i < 10; i++)
+    {
+        sum += (pesel[i] - '0') * weights[i];
+    }
+    
+    int controlDigit = (10 - (sum % 10)) % 10;
+    
+    return controlDigit == (pesel[10] - '0');
 }
 
 static DateTime GetBirthDateFromPesel(string pesel)
 {
-    int year = int.Parse(pesel.Substring(0, 2));
-    int month = int.Parse(pesel.Substring(2, 2));
-    int day = int.Parse(pesel.Substring(4, 2));
-
-    int century = month / 20;
-    month %= 20;
-
-    year += century switch
-    {
-        0 => 1900,
-        1 => 2000,
-        2 => 2100,
-        3 => 2200,
-        4 => 1800,
-        _ => throw new ArgumentException("Niepoprawny PESEL")
-    };
+    string yearPart = pesel.Substring(0, 2);
+    string monthPart = pesel.Substring(2, 2);
+    string dayPart = pesel.Substring(4, 2);
+    
+    int year = int.Parse(yearPart);
+    int month = int.Parse(monthPart);
+    int day = int.Parse(dayPart);
+    
+    if (month > 80 && month < 93) { month -= 80; }
+    else if (month > 0 && month < 13) { month = month; }
+    else if (month > 20 && month < 33) { month += 20; }
+    else if (month > 40 && month < 53) { month += 40; }
+    else if (month > 60 && month < 73) { month += 60; }
+    else { throw new ArgumentException("Niepoprawny miesiąc w PESEL"); }
     
     return new DateTime(year, month, day);
 }
@@ -61,5 +77,4 @@ static string GetGenderFromPesel(string pesel)
 }
 
 }
-
 
